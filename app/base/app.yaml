@@ -1,4 +1,4 @@
-apiVersion: wildfly.org/v1alpha1
+apiVersion: wildfly.org/v1
 kind: WildFlyServer
 metadata:
   name: example-wildfly
