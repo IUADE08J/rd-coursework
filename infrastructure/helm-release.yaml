@@ -2,14 +2,14 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: wildfly-operator
-  namespace: wildfly-operator
+  namespace: wildfly
 spec:
 #  applicationImage: "demo.goharbor.io/beigelzimer/coursework-wildfly:v1.0"
   interval: 2m
   releaseName: wildfly-operator
   chart:
     spec:
-      chart: wildfly
+      chart: wildfly-operator
       version: "2.4.0"
       sourceRef:
         kind: HelmRepository
