@@ -9,6 +9,7 @@ spec:
   chart:
     spec:
       chart: wildfly
+      version: "2.4.0"
       sourceRef:
         kind: HelmRepository
         name: wildfly
@@ -18,6 +19,10 @@ spec:
     crds: Create
   upgrade:
     crds: CreateReplace
-#  values:
+  values:
+    image:
+      repository: quay.io/wildfly/wildfly-operator
+      tag: "2.4.0"
+
 #    watchNamespaces:
 #      - wildfly-apps
