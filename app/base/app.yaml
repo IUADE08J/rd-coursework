@@ -1,0 +1,11 @@
+apiVersion: wildfly.org/v1alpha1
+kind: WildFlyServer
+metadata:
+  name: example-wildfly
+  namespace: wildfly-apps
+spec:
+  applicationImage: quay.io/wildfly/wildfly-runtime:latest
+  replicas: 1
+  env:
+    - name: JAVA_OPTS
+      value: "-Xms512m -Xmx1024m"
