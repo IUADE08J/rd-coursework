@@ -3,7 +3,8 @@ kind: WildFlyServer
 metadata:
   name: example-wildfly
 spec:
-  applicationImage: quay.io/wildfly/wildfly-runtime:latest
+#  applicationImage: quay.io/wildfly/wildfly-runtime:latest
+  applicationImage: "demo.goharbor.io/beigelzimer/coursework-wildfly:v1.0"
   replicas: 1
   env:
     - name: JAVA_OPTS

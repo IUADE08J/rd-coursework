@@ -4,13 +4,13 @@ metadata:
   name: wildfly-operator
   namespace: wildfly-operator
 spec:
-  applicationImage: "demo.goharbor.io/beigelzimer/coursework-wildfly:v1.0"
+#  applicationImage: "demo.goharbor.io/beigelzimer/coursework-wildfly:v1.0"
   interval: 2m
   releaseName: wildfly-operator
   chart:
     spec:
       chart: wildfly
-#      version: "2.4.0"
+      version: "2.4.0"
       sourceRef:
         kind: HelmRepository
         name: wildfly
