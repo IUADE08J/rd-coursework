@@ -22,9 +22,9 @@ spec:
   upgrade:
     crds: CreateReplace
   values:
-#    image:
-#      repository: quay.io/wildfly/wildfly-operator
-#      tag: "2.4.0"
-
+    image:
+      repository: quay.io/wildfly/wildfly-operator
+      tag: "2.4.0"
+      pullPolicy: IfNotPresent
 #    watchNamespaces:
 #      - wildfly-apps
