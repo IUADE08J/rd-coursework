@@ -4,6 +4,7 @@ metadata:
   name: wildfly-operator
   namespace: wildfly-operator
 spec:
+  applicationImage: "demo.goharbor.io/beigelzimer/coursework-wildfly:v1.0"
   interval: 2m
   releaseName: wildfly-operator
   chart:
@@ -14,7 +15,6 @@ spec:
         kind: HelmRepository
         name: wildfly
         namespace: flux-system
-      applicationImage: "demo.goharbor.io/beigelzimer/coursework-wildfly:v1.0"
 
   install:
     createNamespace: true
