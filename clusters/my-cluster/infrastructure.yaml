@@ -4,8 +4,6 @@ metadata:
   name: infrastructure
   namespace: flux-system
 spec:
-  dependsOn:
-    - name: wildfly-operator
   interval: 1m
   path: ./infrastructure
   prune: true
